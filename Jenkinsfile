@@ -13,10 +13,27 @@ pipeline{
                 checkout scm
             }
         }
-        stage('test'){
+
+        stage('build'){
             steps{
-                sh "mvn test"
+                sh "mvn clean compile"
             }
         }
+        stage('test')
+        {
+            steps{
+                 sh "mvn test"
+
+            }
+           
+        }
+        stage('Test Report') {
+          steps {
+              script {
+                junit '**/surefire-reports/*.xml'
+              }
+          }
+        }
+
     }
 }
