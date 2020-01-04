@@ -1,37 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="http://maven.apache.org/POM/4.0.0"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.springframework.samples</groupId>
-  <artifactId>springboot-petclinic</artifactId>
-  <version>1.4.1</version>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.5.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>co.pragra.jenkinslearning</groupId>
+    <artifactId>ci-pipeline-pragra</artifactId>
+    <version>0.0.1</version>
+         <packaging>war</packaging>
+    <name>ci-pipeline-pragra</name>
+    <description>CI/CD pipeline demo</description>
 
-  <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.4.1.RELEASE</version>
-  </parent>
-  <name>petclinic</name>
-
-  <properties>
-
-    <!-- Generic properties -->
-    <java.version>1.8</java.version>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-    <!-- Web dependencies -->
-    <webjars-bootstrap.version>3.3.6</webjars-bootstrap.version>
-    <webjars-jquery-ui.version>1.11.4</webjars-jquery-ui.version>
-    <webjars-jquery.version>2.2.4</webjars-jquery.version>
-
-    <thymeleaf.version>3.0.2.RELEASE</thymeleaf.version>
-    <thymeleaf-layout-dialect.version>2.0.4</thymeleaf-layout-dialect.version>
-
-    <cobertura.version>2.7</cobertura.version>
-
-  </properties>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
 
   <dependencies>
     <!-- Spring and Spring Boot dependencies -->
